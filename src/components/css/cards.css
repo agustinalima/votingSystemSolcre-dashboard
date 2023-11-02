@@ -16,6 +16,7 @@
 
 
 .allLists{
+  text-align: left;
   margin-left: 10px;
   width: 90%;
   display: grid;
@@ -94,70 +95,4 @@ grid-row-gap: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   color: #A3AED0
-}
-
-
-
-/* Card ULTIMO PRODUCTO */
-.cardUP {
-  display: flex;
-  border: 1px solid #64CBFF;
-  border-radius: 10px;
-  padding: 20px; 
-  background-color: white;
-  flex-direction: row;
-  width: 496px;
-  height: 300px;
-  transition: 400ms;
-}
-.cardUP:hover {
-  scale: 102%;
-  border: 1px solid #E93882;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.cardUP .ult {
-  font-size: 15px;
-  color: #A3AED0;
-  text-align: left;
-}
-.iconoUP img {
-  width: 260px;
-  overflow: hidden;
-  border-radius: 100%;
-  border: 1px solid #A3AED0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.dataUP {
-  margin-left: 20px;
-}
-.dataUP h3 {
-  font-size: 30px;
-  color: #2B3674;
-  margin-top: 15px;
-}
-.dataUP p {
-  font-size: 15px;
-  color: #A3AED0;
-}
-.dataUP span {
-  font-size: 17px;
-  color: white;
-  text-align: left;
-  font-weight: 700;
-  background-color: #4631FF;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.dataUP .envioUP {
-  font-size: 17px;
-  color:#E93882;
-  font-weight: 500;
-  margin-top: -10px
-}
-.dataUP .precioUP {
-  color: #2B3674;
-  font-size: 30px;
-  font-weight: 500;
-  margin-top: 0px
 }
