@@ -23,7 +23,7 @@ function CardUltimoUsuario() {
     <div>
       {usuarioConMayorId ? (
 
-        <div className='card'>
+        <div className='card card4'>
 
           <div className='icono'>
             <img className='foto' src={`https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Mask_group_hn5qrd.png`} alt="" />

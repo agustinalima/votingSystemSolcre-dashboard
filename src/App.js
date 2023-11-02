@@ -8,6 +8,8 @@ import CardTotalProductos from './components/dashboard/CardTotalProductos';
 import CardTotalUsuarios from './components/dashboard/CardTotalUsuarios';
 import CardUltimoUsuario from './components/dashboard/CardUltimoUsuario';
 import CandidatesList from './components/candidates/CandidatesList';
+import VotesList from './components/candidates/VotesList';
+import AddVoter from './components/candidates/AddVoter';
 
 
 function App() {
@@ -29,10 +31,14 @@ function App() {
       <section className='allCards'> 
       <CardTotalProductos />
       <CardTotalUsuarios />
-      
       <CardTotalCategorias />
       <CardUltimoUsuario />
+      </section>
+
+      <section className='allLists'>
       <CandidatesList />
+      <VotesList />
+      <AddVoter />
       </section>
 
       </div>

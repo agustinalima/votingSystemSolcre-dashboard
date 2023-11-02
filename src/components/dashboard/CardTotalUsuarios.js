@@ -21,7 +21,7 @@ function CardTotalUsuarios(){
 
 
     return(
-        <div className='card'>
+        <div className='card card2'>
 
           <div className='icono'>
             <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Group_301_pnloqh.png" alt=""></img>

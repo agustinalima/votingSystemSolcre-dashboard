@@ -26,7 +26,7 @@ function CardTotalCategorias(){
 
 
     return(
-        <div className='card'>
+        <div className='card-container card card3'>
           
           <div className='icono'>
             <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Group_10_pzsu22.png" alt=""></img>

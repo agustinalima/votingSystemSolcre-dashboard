@@ -21,7 +21,7 @@ function CardTotalProductos(){
 
 
     return(
-        <div className='card'>
+        <div className='card card1'>
 
             <div className='icono'>
               <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Group_300_sfc7ch.png" alt=""></img>
