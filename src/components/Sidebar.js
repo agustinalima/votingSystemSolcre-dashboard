@@ -10,7 +10,7 @@ function Sidebar(){
             </div>
             <nav>
                 <ul>
-                <li><img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1696719276/dashboard/Icon-1_rilar4.svg" alt=""></img><Link to="/dashboard">Dashboard</Link> </li>
+                <li><img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698787333/VotingSystem/3d-square_1_ozxbkh.png" alt=""></img><Link to="/dashboard">Dashboard</Link> </li>
                 </ul>
 
                 <span className='logout'><img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1696721682/dashboard/logout_tnsdpl.svg" alt=""></img>Log out</span>

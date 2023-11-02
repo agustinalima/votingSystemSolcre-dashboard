@@ -8,13 +8,13 @@ function CardTotalProductos(){
 
     useEffect(() => {
 
-    // Realizar la solicitud a la API para obtener la lista de todos los productos
-    fetch('https://tienda-sound.onrender.com/productos/api/todoslosproductos')
+    // Realizar la solicitud a la API para obtener la lista de todos los votantes/candidatos
+    fetch('http://localhost:3002/api/allCandidates')
       .then((response) => response.json())
       .then((resultado) => {
         // Obten el número total de productos
-        const totalProductos = resultado.total;
-        setTotal(totalProductos);
+        const totalCandidatos = resultado.total;
+        setTotal(totalCandidatos);
       })
       .catch((error) => console.error(error));
   }, []);
@@ -24,11 +24,11 @@ function CardTotalProductos(){
         <div className='card'>
 
             <div className='icono'>
-              <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1696705188/dashboard/products_pqe8pp.png" alt=""></img>
+              <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Group_300_sfc7ch.png" alt=""></img>
             </div>
 
             <div className='data'>
-              <p>Total productos</p>
+              <p>Total usuarios</p>
               <h2>{total}</h2>
             </div>
 

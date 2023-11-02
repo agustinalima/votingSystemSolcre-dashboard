@@ -1,10 +1,13 @@
 import './App.css';
 import Sidebar from './components/Sidebar';
-import Dashboard from './pages/Dashboard';
-import Productos from './pages/Productos';
-import Categorias from './pages/Categorias';
 import AdminCard from './components/AdminCard';
-import {Route, Routes} from 'react-router-dom';
+
+
+import CardTotalCategorias from './components/dashboard/CardTotalCategorias';
+import CardTotalProductos from './components/dashboard/CardTotalProductos';
+import CardTotalUsuarios from './components/dashboard/CardTotalUsuarios';
+import CardUltimoUsuario from './components/dashboard/CardUltimoUsuario';
+import CandidatesList from './components/candidates/CandidatesList';
 
 
 function App() {
@@ -16,11 +19,22 @@ function App() {
       <AdminCard />
 
       <div className='main-content'>
-      <Routes>
-      <Route path="/dashboard" exact element={<Dashboard />} />
-      <Route path="/productos" exact element={<Productos />} />
-      <Route path="/categorias" exact element={<Categorias />} />
-      </Routes>
+
+
+      <div className='page-title'>
+                <span className='tiendasound-tag'>Voting System</span>
+                <h1>Dashboard</h1>
+      </div>
+
+      <section className='allCards'> 
+      <CardTotalProductos />
+      <CardTotalUsuarios />
+      
+      <CardTotalCategorias />
+      <CardUltimoUsuario />
+      <CandidatesList />
+      </section>
+
       </div>
 
     </div>

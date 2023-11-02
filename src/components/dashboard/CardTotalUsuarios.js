@@ -8,12 +8,12 @@ function CardTotalUsuarios(){
 
     useEffect(() => {
 
-    fetch('https://tienda-sound.onrender.com/users/api/todoslosusuarios')
+    fetch('http://localhost:3002/api/allVotes')
       .then((response) => response.json())
       .then((resultado) => {
 
-        const totalUsuarios = resultado.total;
-        setTotal(totalUsuarios);
+        const totalVotos = resultado.total;
+        setTotal(totalVotos);
 
       })
       .catch((error) => console.error(error));
@@ -24,11 +24,11 @@ function CardTotalUsuarios(){
         <div className='card'>
 
           <div className='icono'>
-            <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1696705188/dashboard/users_uyowvc.png" alt=""></img>
+            <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Group_301_pnloqh.png" alt=""></img>
           </div>
 
           <div className='data'>
-            <p>Total usuarios</p>
+            <p>Total votos</p>
             <h2>{total}</h2>
           </div>
           

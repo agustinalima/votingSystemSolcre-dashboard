@@ -1,5 +1,6 @@
 /* Alineación de CARDS en DASHBOARD */
 .allCards{
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -13,20 +14,18 @@
 
 /* Estilos de CARDS - DASHBOARD */
 .card {
+  width: 250px;
   display: flex; 
-  border: 1px solid #64CBFF;
   border-radius: 10px;
   padding: 20px;
   background-color: white;
   justify-content: center;
   align-items: center;
-  max-width: 220px;
   height: 80px;
   transition: 400ms;
 } 
 .card:hover {
   scale: 105%;
-  border: 1px solid #E93882;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .icono {

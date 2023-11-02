@@ -1,0 +1,37 @@
+.table-container-categoria {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px;
+    transition: 400ms;
+  }
+
+.table-container-categoria:hover{
+    scale: 105%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+  .table-container-categoria table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table-container-categoria th, .table-container-categoria td {
+    padding: 10px;
+    text-align: left;
+    color:#2B3674;
+    height: 35px;
+  }
+  
+  .table-container-categoria th {
+    color: #A3AED0
+  }
+  
+  .table-container-categoria tbody tr:nth-child(odd) {
+    background-color: #FAFBFF; 
+  }
+  .table-container-categoria td.idP {
+    color: #5932EA;
+    font-weight: 700;
+  }
+  .table-container-categoria td.idN {
+    font-weight: 600;
+  }

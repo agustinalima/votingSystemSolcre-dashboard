@@ -8,12 +8,17 @@ function CardTotalCategorias(){
 
     useEffect(() => {
 
-    fetch('https://tienda-sound.onrender.com/productos/api/todaslascategorias')
+    fetch('http://localhost:3002/api/allCandidates')
       .then((response) => response.json())
       .then((resultado) => {
 
-        const totalCategorias = resultado.total;
-        setTotal(totalCategorias);
+        // Filtra los candidatos que tienen is_candidate igual a 1
+        const candidatosFiltrados = resultado.filter((candidato) => candidato.is_candidate === 1);
+
+        // Obtiene el total de candidatos después de aplicar el filtro
+        const totalCandidatos = candidatosFiltrados.length;
+
+        setTotal(totalCandidatos);
 
       })
       .catch((error) => console.error(error));
@@ -24,11 +29,11 @@ function CardTotalCategorias(){
         <div className='card'>
           
           <div className='icono'>
-            <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1696705187/dashboard/categories_s0psvh.png" alt=""></img>
+            <img src="https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Group_10_pzsu22.png" alt=""></img>
           </div> 
 
           <div className='data'>
-            <p>Total categorías</p>
+            <p>Total candidatos</p>
             <h2>{total}</h2>
           </div> 
 

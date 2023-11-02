@@ -5,7 +5,7 @@ function CardUltimoUsuario() {
   const [usuarioConMayorId, setUsuarioConMayorId] = useState(null);
 
   useEffect(() => {
-    fetch('https://tienda-sound.onrender.com/users/api/todoslosusuarios')
+    fetch('http://localhost:3002/api/allCandidates')
       .then((response) => response.json())
       .then((resultado) => {
         if (resultado && resultado.data){
@@ -26,13 +26,13 @@ function CardUltimoUsuario() {
         <div className='card'>
 
           <div className='icono'>
-            <img className='foto' src={`https://res.cloudinary.com/dlf8flk1o/image/upload/v1693692976/avatars/${usuarioConMayorId.imagen}`} alt="" />
+            <img className='foto' src={`https://res.cloudinary.com/dlf8flk1o/image/upload/v1698886319/VotingSystem/Mask_group_hn5qrd.png`} alt="" />
           </div>
 
           <div className='data'>
-            <p className='tit'>Último usuario agregado</p>
-            <h3>{usuarioConMayorId.nombreCompleto}</h3>
-            <p>{usuarioConMayorId.email}</p>
+            <p className='tit'>Último usuario</p>
+            <h3>{usuarioConMayorId.name}</h3>
+            <p>{usuarioConMayorId.document}</p>
           </div>
 
         </div>
